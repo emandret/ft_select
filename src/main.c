@@ -6,7 +6,7 @@
 /*   By: emandret <emandret@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/01 00:42:19 by emandret          #+#    #+#             */
-/*   Updated: 2017/11/03 03:00:54 by emandret         ###   ########.fr       */
+/*   Updated: 2017/11/03 14:55:07 by emandret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ static void		ret_final(t_elem *first)
 	{
 		if (elem->selected)
 		{
-			ft_putstr_fd(elem->name, 0);
-			ft_putchar_fd(' ', 0);
+			ft_putstr_fd(elem->name, 1);
+			ft_putchar_fd(' ', 1);
 		}
 		if ((elem = elem->next) == first)
 			break ;
